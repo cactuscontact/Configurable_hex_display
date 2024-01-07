@@ -8,8 +8,8 @@ ENTITY scheduler is
 port( clk, rst, hard_rst, stop_prog :in std_logic;
       program :in std_logic_vector(13 downto 0); 
       inst_out :out std_logic_vector(5 downto 0);
-		pce :out std_logic;
-		buzz: out std_logic);
+      pce :out std_logic;
+      buzz: out std_logic);
 end scheduler;
 
 Architecture Logic_function of scheduler is
